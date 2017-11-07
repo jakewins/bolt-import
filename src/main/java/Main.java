@@ -163,6 +163,10 @@ public class Main
                 // These get created when we pull in the constraints
                 continue;
             }
+
+            throw new IllegalArgumentException( String.format(
+                    "Unrecognized index type: `%s`, description that came with it is: `%s`.",
+                    type, description));
         }
     }
 
